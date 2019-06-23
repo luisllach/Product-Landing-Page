@@ -1,0 +1,261 @@
+body {
+  background-color: #e6f8d3;
+  font-family: 'Raleway';
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #99e052 /*#66a329*/;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  border-radius: 0 0 15px 15px;
+  z-index: 999;
+}
+#header-img {
+  width: 100%;
+  height: 7vh;
+  max-width: 120px;
+  margin-left: 5vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.nav-item-container a {
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#video-small-screen {
+  display: none;
+}
+
+iframe[id="video"] {
+  height: 60vh;
+  width: 50vw;
+}
+
+.video-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  background: rgba(90,90,90,0.4);
+  height: 70vh;
+  width: 55vw;
+  border-radius: 10px;
+}
+
+#howitworks-section {
+  background: url("https://cdn.magdeleine.co/wp-content/uploads/2018/11/https___www.lifeofpix.com_wp-content_uploads_2017_10_IMG_9715-1400x933.jpg");
+  justify-content: center;
+}
+
+#features-section {
+  justify-content: center;
+}
+
+.rounded-square {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 10vh;
+  background: rgba(255,255,255,0.9);
+  height: 80vh;
+  width: 90vw;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 15vh;
+}
+
+.form-field-row:nth-child(1) {
+  width: 80%;
+}
+
+.form-field-row:nth-child(2) {
+  width: 60%;
+}
+
+input[type="email"] {
+  height: 2vh;
+  width: 100%;
+}
+
+input[type="submit"], button[type="button"] {
+  cursor: pointer;
+  font-family: 'Raleway';
+  font-size: 2vh;
+  background-color: darkgreen;
+  color: white;
+  height: 4vh;
+  width: 100%;
+  transition: background-color 0.5s;
+  border: none;
+}
+
+input[type="submit"]:hover, button[type="button"]:hover {
+  background-color: darkorange;
+}
+
+.feature-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-icon {
+  width: 7vw;
+  height: 100%;
+  fill: darkgreen;
+}
+
+.feature-info-right{
+  width: 50%;
+  padding-left: 10px;
+  margin-left: 10px;
+  /*border-left: 1px solid darkgreen;*/
+}
+
+#pricing-section {
+  flex-direction: row !important;
+  justify-content: space-around !important;
+}
+
+.parallax {
+  background-image: url("https://images.pexels.com/photos/707194/pexels-photo-707194.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255,255,255,0.9);
+  width: 30vw;
+  height: 70vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+.card-item img {
+  height: auto;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.card-item p {
+  width: 80%;
+}
+
+.card-item button[type="button"] {
+  width: 50% !important;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkgrey;
+  height: 5vh;
+  text-align: center;
+  
+}
+
+footer span {
+  color: white;
+}
+
+/*scrollbar styling*/
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+
+
+
+/*Terminar*/
+@media (max-width: 480px) {
+  .video-frame {
+    width: 100vw;
+  }
+  iframe[id="video"] {
+    width: 100vw;
+  }
+  #nav-bar {
+    width: 60vw;
+  }
+  #pricing-section {
+    flex-direction: column !important;
+  }
+  
+  .card-item {
+    width: 90vw;
+    height: 25vh;
+  }
+  
+  .card-item img {
+    display: none;
+  }
+  
+  .card-item:nth-child(1) {
+    margin-top: 10vh;
+  }
+}
